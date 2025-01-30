@@ -1,14 +1,18 @@
 let nomeAmigos = [];
 
-function adicionarAmigo(){
+function adicionarAmigo() {
     let nome = document.getElementById("amigo").value;
-    if(nome.trim() === ""){
+    if (nome.trim() === "") {
         alert('digite um nome válido');
-    }else{
-        document.getElementById("listaAmigos").innerHTML = nome;
+    } else {
+        nomeAmigos.push([nome]);
+        nome = document.querySelector('input');
+        nome.value = "";
+        document.getElementById("listaAmigos").innerHTML = nomeAmigos;
+        console.log(nomeAmigos);
     }
     
 }
-// até aqui já temos um trecho do código que consegue apresentar o nome digitado na listaAmigos, preciso ver como armazenar os nomes
-// no array e após armazenar, limpar o campo de texto para receber um novo nome.
+
+
 
