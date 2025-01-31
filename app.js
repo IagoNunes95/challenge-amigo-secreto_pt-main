@@ -21,9 +21,7 @@ function atualizarListaDeAmigos() {
     lista.innerHTML = '';
 
     nomeAmigos.forEach(amigo => {
-        let li = document.createElement('li');
-        li.textContent = amigo;
-        lista.appendChild('li');
+        lista.innerHTML +=  "<li>"+amigo+"</li>";
         console.log(amigo);
     });
 
