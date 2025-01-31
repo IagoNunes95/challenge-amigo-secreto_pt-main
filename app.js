@@ -17,15 +17,20 @@ function adicionarAmigo() {
 }
 
 function atualizarListaDeAmigos() {
-    let lista = document.getElementById('listaAmigos');
-    lista.innerHTML = '';
+    const listElement = document.getElementById('nomeAmigos');
+    listElement.innerHTML = "";
 
-    nomeAmigos.forEach(amigo => {
-        lista.innerHTML += "<li>" + amigo + "</li>";
-        console.log(amigo);
-    });
+    for (let amigo of nomeAmigos) {
+        let elementoLi = document.createElement('li');
+        elementoLi.textContent = amigo;
+        listElement.appendChild(elementoLi);
+
+    }
+
 
 }
+
+
 
 
 
