@@ -10,8 +10,8 @@ function adicionarAmigo() {
     if (nome) {
         nomeAmigos.push(nome);
         amigo.value = '';
-        console.log(nomeAmigos);
         atualizarListaDeAmigos();
+        
     }
 
 }
@@ -29,6 +29,19 @@ function atualizarListaDeAmigos() {
 
 
 }
+
+function sortearAmigo(){
+    if(nomeAmigos.length === 0){
+        alert('você não adicionou amigos para o sorteio, por favor, adicione seus amigos!!')
+        return;
+    }
+const amigoAleatorio = Math.floor(Math.random() * nomeAmigos.length)
+const amigoSorteado = nomeAmigos[amigoAleatorio];
+const resultado = document.getElementById('resultado');
+resultado.innerHTML = 'Amigo sorteado: ' + amigoSorteado;
+
+}
+
 
 
 
