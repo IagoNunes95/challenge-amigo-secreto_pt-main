@@ -5,4 +5,4 @@ Challenger proposto pela Alura para criar um jogo que fosse adicionado nomes e e
 
 
 ## 🛠 linguagens
-Javascript, HTML, CSS...
+Javascript, HTML e CSS.
