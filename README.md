@@ -6,3 +6,6 @@ Challenger proposto pela Alura para criar um jogo que fosse adicionado nomes e e
 
 ## 🛠 linguagens
 Javascript, HTML e CSS.
+
+## Link do jogo
+https://challenge-do-amigo-secreto-roan.vercel.app/
